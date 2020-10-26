@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start:client": "node ./client.js",
-    "start:server": "node ./server.js -p 4444 7777"
+    "start:server": "node ./server.js -p 7777"
   },
   "keywords": [],
   "author": "",
