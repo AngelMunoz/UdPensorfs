@@ -1,0 +1,17 @@
+{
+  "name": "udpensor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "start:client": "node ./client.js",
+    "start:server": "node ./server.js -p 4444 7777"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.3"
+  }
+}

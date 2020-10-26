@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Client",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/client.js",
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Server",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/server.js",
+            "args": [
+                "-p",
+                "7777"
+            ]
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Debug Client-Server",
+            "configurations": [
+                "Debug Client",
+                "Debug Server"
+            ]
+        }
+    ]
+}
