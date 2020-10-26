@@ -1,4 +1,4 @@
-import { parse } from "path";
+//@ts-check
 
 export const headers = {
     PING: "udpensor:ping",
@@ -36,7 +36,7 @@ export const groupArguments = (args) => {
 
 /**
  * 
- * @param {string[][]} groups 
+ * @param {string[]} args 
  * @param {number} defaultPort
  */
 export const parseArguments = (args, defaultPort) => {
