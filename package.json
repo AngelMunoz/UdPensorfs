@@ -2,16 +2,14 @@
   "name": "udpensor",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
   "type": "module",
   "scripts": {
-    "start:client": "node ./client.js",
-    "start:server": "node ./server.js -p 7777"
+    "build:client": "dotnet fable UdPensor.Client",
+    "build:server": "dotnet fable UdPensor.Server",
+    "start:client": "pnpm build:client && node ./UdPensor.Client/Client.fs.js",
+    "start:server": "pnpm build:server && node ./UdPensor.Server/Server.fs.js -p 7777"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^14.14.3"
-  }
+  "license": "ISC"
 }
