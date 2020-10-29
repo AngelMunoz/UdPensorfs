@@ -8,10 +8,11 @@
             "type": "node",
             "request": "launch",
             "name": "Debug Client",
+            "preLaunchTask": "build:client",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/client.js",
+            "program": "${workspaceFolder}/UdPensor.Client/Client.fs.js",
         },
         {
             "type": "node",
@@ -20,7 +21,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/server.js",
+            "program": "${workspaceFolder}/UdPensor.Server/Server.fs.js",
             "args": [
                 "-p",
                 "7777"
