@@ -4,6 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "postinstall": "dotnet tool restore",
     "build:client": "dotnet fable UdPensor.Client",
     "build:server": "dotnet fable UdPensor.Server",
     "start:client": "pnpm build:client && node ./UdPensor.Client/Client.fs.js",

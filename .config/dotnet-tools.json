@@ -3,7 +3,7 @@
   "isRoot": true,
   "tools": {
     "fable": {
-      "version": "3.0.0-nagareyama-beta-004",
+      "version": "3.2.1",
       "commands": [
         "fable"
       ]
